@@ -1,16 +1,45 @@
 {
-	"id": "a3ca56c4-5907-4d99-bec2-2aa4e7685e58",
-	"name": "2474802010483_TruongMinhNhat_Env",
-	"values": [
-		{ "key": "token", "value": "", "type": "default", "enabled": true },
-		{ "key": "baseurl", "value": "https://gorest.co.in/public/v2", "type": "default", "enabled": true },
-		{ "key": "runEmail", "value": "", "type": "any", "enabled": true },
-		{ "key": "deletedUserId", "value": "", "type": "any", "enabled": true },
-		{ "key": "userId", "value": "", "type": "any", "enabled": true },
-		{ "key": "createdEmail", "value": "", "type": "any", "enabled": true }
-	],
-	
-	"_postman_variable_scope": "environment",
-	"_postman_exported_at": "2026-10-21T16:45:15.016Z",
-	"_postman_exported_using": "Postman/12.33.2-261021-0231"
+  "id": "a3ca56c4-5907-4d99-bec2-2aa4e7685e58",
+  "name": "2474802010483_TruongMinhNhat_Env",
+  "values": [
+    {
+      "key": "token",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "baseurl",
+      "value": "https://gorest.co.in/public/v2",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "runEmail",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "deletedUserId",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "userId",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    },
+    {
+      "key": "createdEmail",
+      "value": "",
+      "type": "any",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2026-10-21T16:45:15.016Z",
+  "_postman_exported_using": "Postman/12.33.2-261021-0231"
 }
