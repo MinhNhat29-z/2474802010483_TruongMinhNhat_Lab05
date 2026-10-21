@@ -10,7 +10,7 @@
 		{ "key": "createdEmail", "value": "", "type": "any", "enabled": true }
 	],
 	
-	"_postman_variable_scope": "environment"
+	"_postman_variable_scope": "environment",
 	"_postman_exported_at": "2026-10-21T16:45:15.016Z",
 	"_postman_exported_using": "Postman/12.33.2-261021-0231"
 }
