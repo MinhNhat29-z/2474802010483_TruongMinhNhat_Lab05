@@ -25,8 +25,22 @@ jobs:
       - name: Install Newman
         run: npm install --global newman
 
-      - name: Validate monitor collection JSON
-        run: node -e "JSON.parse(require('fs').readFileSync('monitor.json', 'utf8')); console.log('monitor.json is valid JSON')"
+      - name: Validate Collection JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('Collection.json', 'utf8')); console.log('Collection.json is valid JSON')"
 
-      - name: Run Postman monitor collection
-        run: newman run monitor.json --reporters cli
+      - name: Validate Environment JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('Environment.json', 'utf8')); console.log('Environment.json is valid JSON')"
+
+      - name: Run Postman API tests
+        env:
+          GOREST_TOKEN: ${{ secrets.GOREST_TOKEN }}
+        run: |
+          if [ -z "$GOREST_TOKEN" ]; then
+            echo "Missing GitHub Actions secret: GOREST_TOKEN"
+            exit 1
+          fi
+
+          newman run Collection.json \
+            --environment Environment.json \
+            --env-var "token=$GOREST_TOKEN" \
+            --reporters cli
