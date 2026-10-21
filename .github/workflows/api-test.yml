@@ -45,4 +45,4 @@ jobs:
             -d users.csv \
             --env-var "token=$GOREST_TOKEN" \
             --reporters cli \
-            --suppress-exit-code
+            
