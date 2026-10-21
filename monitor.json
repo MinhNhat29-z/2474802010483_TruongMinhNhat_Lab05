@@ -14,13 +14,13 @@
           "listen": "test",
           "script": {
             "exec": [
-              "   pm.test('Status 200', function () {\r",
-              "       pm.response.to.have.status(200);\r",
-              "   });\r",
+              "pm.test('Status 200', function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
               "\r",
-              "   pm.test('Response time < 800ms', function () {\r",
-              "       pm.expect(pm.response.responseTime).to.be.below(800);\r",
-              "   });"
+              "pm.test('Response time < 800ms', function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+              "});"
             ],
             "type": "text/javascript",
             "packages": {},
@@ -66,6 +66,12 @@
           ""
         ]
       }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseurl",
+      "value": "https://gorest.co.in/public/v2"
     }
   ]
 }
